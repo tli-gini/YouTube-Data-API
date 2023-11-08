@@ -43,27 +43,37 @@ body {
 
   #guide-content {
     padding: 8px;
-    .items {
-      padding: 0 10px;
 
-      .item {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        .left-icon {
-          margin-right: 24px;
-        }
-        .left-string {
-          font-size: 14px;
-          color: #0f0f0f;
-          font-weight: 400;
-          flex: 1;
-          flex-basis: 1e-9px;
+    .guide-button {
+      cursor: pointer;
+      .items {
+        padding: 0 10px;
+
+        .item {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          .left-icon {
+            margin-right: 24px;
+          }
+          .left-string {
+            font-size: 14px;
+            color: #0f0f0f;
+            font-weight: 400;
+            flex: 1;
+            flex-basis: 1e-9px;
+          }
         }
       }
     }
   }
+}
+
+.second-section {
+  border-top: 1px solid rgb(0 0 0 / 10%);
+  margin-top: 12px;
+  padding-top: 12px;
 }
 
 .top-header {
