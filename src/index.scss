@@ -40,12 +40,31 @@ body {
 
 #guide-wrapper {
   display: grid;
+  padding: 8px 12px 8px 12px;
 
   #guide-content {
-    padding: 8px;
+    // padding-top: 8px;
+    width: 216px;
+    #guide-section {
+      border-top: 1px solid rgb(0 0 0 / 10%);
+      margin-top: 12px;
+      padding-top: 12px;
+    }
 
     .guide-button {
       cursor: pointer;
+      .header {
+        display: flex;
+        align-items: center;
+        text-decoration-line: none;
+        .header-text {
+          padding-right: 8px;
+          font-size: 1rem;
+          font-weight: 500;
+          color: #0f0f0f;
+          overflow: hidden;
+        }
+      }
       .items {
         padding: 0 10px;
 
@@ -70,19 +89,12 @@ body {
   }
 }
 
-.second-section {
-  border-top: 1px solid rgb(0 0 0 / 10%);
-  margin-top: 12px;
-  padding-top: 12px;
-}
-
 .top-header {
   height: 56px;
-  padding: 0 8px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  // align-items: center;
+  // justify-content: space-between;
   .top-icon {
     padding: 10px;
     cursor: pointer;
@@ -90,9 +102,8 @@ body {
   .tw {
     font-size: 10px;
     color: #606060;
-    margin: 12px 0 0 -10px;
+    margin: 0 0 0 -10px;
     padding: 5px;
-    height: 7vh;
   }
   .gini {
     border-radius: 50px;
