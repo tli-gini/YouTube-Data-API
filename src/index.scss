@@ -31,62 +31,95 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   background-color: #fff;
 }
 
 #container {
 }
 
-#guide-wrapper {
+.guide-wrapper {
   display: grid;
   padding: 8px 12px 8px 12px;
+  width: 240px;
 
   #guide-content {
-    // padding-top: 8px;
+    padding-top: 6px;
     width: 216px;
     #guide-section {
       border-top: 1px solid rgb(0 0 0 / 10%);
       margin-top: 12px;
       padding-top: 12px;
     }
-
-    .guide-button {
-      cursor: pointer;
-      .header {
-        display: flex;
-        align-items: center;
-        text-decoration-line: none;
-        .header-text {
-          padding-right: 8px;
-          font-size: 1rem;
-          font-weight: 500;
-          color: #0f0f0f;
-          overflow: hidden;
-        }
-      }
-      .items {
-        padding: 0 10px;
-
-        .item {
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          height: 40px;
-          .left-icon {
-            margin-right: 24px;
-          }
-          .left-string {
-            font-size: 14px;
-            color: #0f0f0f;
-            font-weight: 400;
-            flex: 1;
-            flex-basis: 1e-9px;
-          }
-        }
-      }
-    }
   }
+}
+
+.guide-button {
+  cursor: pointer;
+  .header {
+    display: flex;
+    align-items: center;
+    text-decoration-line: none;
+  }
+}
+
+.items {
+  padding: 0 10px;
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  .left-icon {
+    margin-right: 24px;
+  }
+  .left-string {
+    font-size: 14px;
+    color: #0f0f0f;
+    font-weight: 350;
+    flex: 1;
+    flex-basis: 1e-9px;
+  }
+}
+
+.guide-header {
+  padding: 0 10px;
+}
+.wrapper {
+  display: grid;
+  padding: 8px 12px 8px 12px;
+  width: 228px;
+}
+#third-section,
+#fourth-section,
+#fifth-section,
+#last-section,
+#footer-section {
+  border-top: 1px solid rgb(0 0 0 / 10%);
+  margin-top: 12px;
+  padding-top: 12px;
+}
+#copyright {
+  padding: 16px;
+  color: #909090;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.button-wrapper {
+  padding-top: 6px;
+  .yt-img {
+    border-radius: 50%;
+  }
+}
+
+.header-text {
+  padding-right: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f0f0f;
+  overflow: hidden;
 }
 
 .top-header {
