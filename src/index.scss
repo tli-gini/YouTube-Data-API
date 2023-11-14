@@ -35,6 +35,12 @@ body {
   background-color: #fff;
 }
 
+#masthead-container {
+  display: flex;
+}
+
+//left-container
+
 .guide-wrapper {
   display: grid;
   padding: 8px 12px 8px 12px;
@@ -43,6 +49,7 @@ body {
   .guide-content {
     padding-top: 6px;
     width: 216px;
+
     #guide-section {
       border-top: 1px solid rgb(0 0 0 / 10%);
       margin-top: 12px;
@@ -55,6 +62,7 @@ body {
   cursor: pointer;
   width: 204px;
   border-radius: 10px;
+
   .header {
     display: flex;
     align-items: center;
@@ -64,30 +72,31 @@ body {
 
 .items {
   padding: 0 10px;
-}
-.item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  .left-icon {
-    margin-right: 24px;
-  }
-  .left-string {
-    font-size: 14px;
-    color: #0f0f0f;
-    font-weight: 350;
-    flex: 1;
-    flex-basis: 1e-9px;
-  }
-  #channel {
-    transform: translateY(2px);
+
+  .item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+    .left-icon {
+      margin-right: 24px;
+    }
+
+    .left-string {
+      font-size: 14px;
+      color: #0f0f0f;
+      font-weight: 350;
+      flex: 1;
+      flex-basis: 1e-9px;
+    }
+
+    #channel {
+      transform: translateY(2px);
+    }
   }
 }
 
-.guide-header {
-  padding: 0;
-}
 .wrapper {
   border-top: 1px solid rgb(0 0 0 / 10%);
   margin-top: 12px;
@@ -95,24 +104,20 @@ body {
   padding: 16px 12px 4px 12px;
   width: 228px;
 
-  .wrapper-sec {
-    display: grid;
-    padding: 8px 12px 8px 12px;
-  }
-}
+  .button-wrapper {
+    padding-top: 6px;
 
-#copyright {
-  padding: 16px;
-  color: #909090;
-  font-size: 0.8rem;
-  font-weight: 400;
-}
+    .yt-img {
+      border-radius: 50%;
+      transform: translateY(2px);
+    }
 
-.button-wrapper {
-  padding-top: 6px;
-  .yt-img {
-    border-radius: 50%;
-    transform: translateY(2px);
+    #copyright {
+      padding: 16px;
+      color: #909090;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
   }
 }
 
@@ -124,12 +129,14 @@ body {
   overflow: hidden;
 }
 
+//
+
 .top-header {
   height: 56px;
   display: flex;
   flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
+
+  //start
   .top-icon {
     padding: 10px;
     cursor: pointer;
@@ -142,6 +149,30 @@ body {
   }
   .gini {
     border-radius: 50px;
+  }
+}
+
+//right-container
+.right-container {
+  padding: 2px;
+  width: 100%;
+}
+
+.right-header {
+  display: flex;
+  height: 56px;
+  width: 100%;
+
+  #center {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  #end {
+    width: 30%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 24px;
   }
 }
 
