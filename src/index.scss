@@ -39,10 +39,17 @@ body {
   display: flex;
 }
 
+#start {
+  display: flex;
+  padding: 8px 12px 8px 12px;
+  width: 240px;
+}
+
 //left-container
 
 .guide-wrapper {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 8px 12px 8px 12px;
   width: 240px;
 
@@ -56,6 +63,12 @@ body {
       padding-top: 12px;
     }
   }
+}
+
+.scroll-container {
+  max-height: 93vh;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .guide-button {
@@ -100,7 +113,8 @@ body {
 .wrapper {
   border-top: 1px solid rgb(0 0 0 / 10%);
   margin-top: 12px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   padding: 16px 12px 4px 12px;
   width: 228px;
 
@@ -140,6 +154,7 @@ body {
   .top-icon {
     padding: 10px;
     cursor: pointer;
+    transform: translateY(2px);
   }
   .tw {
     font-size: 10px;
@@ -154,7 +169,6 @@ body {
 
 //right-container
 .right-container {
-  padding: 2px;
   width: 100%;
 }
 
@@ -176,6 +190,9 @@ body {
   }
 }
 
+#search-section {
+  width: 75%;
+}
 .search-box {
   position: relative;
   align-items: center;
@@ -191,6 +208,7 @@ body {
   // flex-basis: 1e-9px;
   display: flex;
   flex-direction: row;
+  justify-content: end;
   max-width: 100%;
 }
 
@@ -201,6 +219,7 @@ input {
   outline-color: transparent;
   border: none;
   max-width: 100%;
+  width: 100%;
   &::placeholder {
     color: #999;
     font-weight: 300;
@@ -215,7 +234,7 @@ button {
   border-radius: 0 40px 40px 0;
   cursor: pointer;
   height: 40px;
-  width: 64px;
+  width: 80px;
   margin: 0;
   box-sizing: border-box;
 }
