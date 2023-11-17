@@ -31,8 +31,12 @@ const callParams = () => {
         output += `
     
         <a href="${video.link}" target="_blank">
-          <img src="${video.thumbnail}"/>
-          <h3>${video.title}</h3>
+          <div class="video-img">
+           <img src="${video.thumbnail}" class="thumbnail"/>
+           <h3 class="video-title">${video.title}</h3>
+          </div>
+          
+          
         </a>
         
         `;
