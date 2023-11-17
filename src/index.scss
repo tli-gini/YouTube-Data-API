@@ -280,7 +280,23 @@ input {
     height: 202.5px;
     // clip-path: polygon(0 12.6%, 100% 12.6%, 100% 87.4%, 0 87.4%);
   }
-  .video-title {
-    text-decoration: none;
-  }
+}
+
+.video-title {
+  text-decoration-line: none;
+  color: #0f0f0f;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 12px 0 4px 0;
+}
+.channel-name,
+.video-views {
+  color: #606060;
+  font-weight: 400;
+}
+
+.channel-thumbnail {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }

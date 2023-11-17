@@ -34,6 +34,9 @@ const callParams = () => {
           <div class="video-img">
            <img src="${video.thumbnail}" class="thumbnail"/>
            <h3 class="video-title">${video.title}</h3>
+           <h5 class="channel-name">${video.channel.name}</h5>
+           <h5 class="video-views">觀看次數：${video.views}次</h5>
+           <img src="${video.channel.thumbnail}" class="channel-thumbnail"/>
           </div>
           
           
