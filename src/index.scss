@@ -165,6 +165,10 @@ body {
   }
 }
 
+#menu-button {
+  border-radius: 50%;
+}
+
 //right-container
 .right-container {
   width: 100%;
@@ -261,6 +265,25 @@ input {
     border-radius: 50px;
     margin-right: 6px;
     margin-left: 6px;
+  }
+}
+
+//class button
+.class-btns {
+  display: flex;
+  margin: 8px 20px 20px 20px;
+
+  .class-btn {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 6px;
+    border: 10px;
+    background-color: rgb(0 0 0 / 5%);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
   }
 }
 
