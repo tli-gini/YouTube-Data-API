@@ -171,6 +171,28 @@ body {
   height: 44px;
 }
 
+//mini-left-guide
+
+.mini-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mini-string {
+  max-width: 100%;
+  display: block; //
+  max-height: 1.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
 //right-container
 .right-container {
   width: 100%;
