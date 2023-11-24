@@ -173,12 +173,20 @@ body {
 
 //mini-left-guide
 
-.mini-item {
+.mini-guide-wrapper {
   display: flex;
+  width: 74px;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+}
+
+.mini-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0 14px;
+  width: 64px;
 }
 
 .mini-string {
@@ -191,6 +199,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 1.4rem;
+  color: #0f0f0f;
 }
 
 //right-container
