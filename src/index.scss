@@ -7,32 +7,32 @@
 
 /*dark and light mode*/
 :root {
-  --color-white: #ffffff;
-  --color-black: #000;
-  ---color-grey0: #f8f8f8;
-  ---color-grey-1: #dbe1e8;
-  ---color-grey-2: #b2becd;
-  ---color-grey-3: #6c7983;
-  ---color-grey-4: #454e56;
-  ---color-grey-5: #31353e;
-  ---color-grey-6: #12181b;
+  --color-white: #fff;
+  --color-black: #0f0f0f;
+  ---color-grey-0: #f8f8f8;
+  ---color-grey-1: #eee;
+  ---color-grey-2: #ccc;
+  ---color-grey-3: rgb(0 0 0 / 5%);
+  ---color-grey-4: rgb(0 0 0 / 10%);
+  ---color-grey-5: #909090;
+  ---color-grey-6: #606060;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
-.light-mode {
-  --color-white: #454e56;
-  --color-black: #000;
-  ---color-grey0: #f8f8f8;
-  ---color-grey-1: #6c7983;
-  ---color-grey-2: #6c7983;
-  ---color-grey-3: #6c7983;
-  ---color-grey-4: #454e56;
-  ---color-grey-5: #c9d0d7;
-  ---color-grey-6: rgb(24, 38, 75);
+.dark-mode {
+  --color-white: #0f0f0f;
+  --color-black: #fff;
+  ---color-grey0: #;
+  ---color-grey-1: #;
+  ---color-grey-2: #;
+  ---color-grey-3: rgb(0 0 0 / 5%);
+  ---color-grey-4: rgb(0 0 0 / 10%);
+  ---color-grey-5: #;
+  ---color-grey-6: #;
 }
 
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 #masthead-container {
@@ -58,17 +58,18 @@ body {
     width: 216px;
 
     #guide-section {
-      border-top: 1px solid rgb(0 0 0 / 10%);
+      border-top: 1px solid var(---color-grey-4);
       margin-top: 12px;
       padding-top: 12px;
     }
   }
 }
 
-.scroll-container {
+#scroll-container {
   max-height: 93vh;
   overflow: hidden;
   overflow-y: auto;
+  display: block;
 }
 
 .guide-button {
@@ -98,7 +99,7 @@ body {
 
     .left-string {
       font-size: 14px;
-      color: #0f0f0f;
+      color: var(--color-black);
       font-weight: 350;
       flex: 1;
       flex-basis: 1e-9px;
@@ -111,7 +112,7 @@ body {
 }
 
 .wrapper {
-  border-top: 1px solid rgb(0 0 0 / 10%);
+  border-top: 1px solid var(---color-grey-4);
   margin-top: 12px;
   display: flex;
   flex-direction: column;
@@ -128,7 +129,7 @@ body {
 
     #copyright {
       padding: 16px;
-      color: #909090;
+      color: var(---color-grey-5);
       font-size: 0.8rem;
       font-weight: 400;
     }
@@ -139,7 +140,7 @@ body {
   padding-right: 8px;
   font-size: 1rem;
   font-weight: 500;
-  color: #0f0f0f;
+  color: var(--color-black);
   overflow: hidden;
 }
 
@@ -159,7 +160,7 @@ body {
   }
   .tw {
     font-size: 10px;
-    color: #606060;
+    color: var(---color-grey-6);
     margin: 0 0 0 -10px;
     padding: 5px;
   }
@@ -172,6 +173,10 @@ body {
 }
 
 //mini-left-guide
+
+#mini-guider {
+  display: none;
+}
 
 .mini-guide-wrapper {
   display: flex;
@@ -199,7 +204,7 @@ body {
   font-size: 10px;
   font-weight: 400;
   line-height: 1.4rem;
-  color: #0f0f0f;
+  color: var(--color-black);
 }
 
 //right-container
@@ -240,7 +245,7 @@ body {
 
 //center
 #voice-search {
-  background-color: rgb(0 0 0 / 5%);
+  background-color: var(---color-grey-3);
 }
 
 #search-section {
@@ -249,12 +254,12 @@ body {
 .search-box {
   position: relative;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: var(--color-white);
+  border: 1px solid var(---color-grey-2);
   border-radius: 40px 40px 40px 40px;
-  box-shadow: inset 0 1px 2px #eee;
-  caret-color: #0f0f0f;
-  color: #111;
+  box-shadow: inset 0 1px 2px var(---color-grey-1);
+  caret-color: var(--color-black);
+  color: var(--color-black);
   padding: 0px 0px 0px 16px;
   margin-left: 32px;
   flex: 1;
@@ -273,16 +278,16 @@ input {
   max-width: 100%;
   width: 100%;
   &::placeholder {
-    color: #999;
+    color: var(---color-grey-5);
     font-weight: 300;
   }
 }
 #search-button {
-  border: 1px solid #ccc;
+  border: 1px solid var(---color-grey-2);
   border-bottom: transparent;
   border-top: transparent;
   border-right: transparent;
-  background-color: #f8f8f8;
+  background-color: var(---color-grey-0);
   border-radius: 0 40px 40px 0;
   cursor: pointer;
   height: 40px;
@@ -312,7 +317,7 @@ input {
     padding: 6px 12px;
     margin: 6px;
     border: 10px;
-    background-color: rgb(0 0 0 / 5%);
+    background-color: var(---color-grey-3);
     font-size: 14px;
     font-weight: 500;
     border-radius: 8px;
@@ -344,16 +349,16 @@ input {
   display: flex;
 }
 .video-title {
-  text-decoration: underline #fff;
-  color: #0f0f0f;
+  text-decoration: underline var(--color-white);
+  color: var(--color-black);
   font-weight: 500;
   font-size: 16px;
   margin: 12px 0 4px 0;
 }
 .channel-name,
 .video-views {
-  text-decoration: underline #fff;
-  color: #606060;
+  text-decoration: underline var(--color-white);
+  color: var(---color-grey-6);
   font-weight: 400;
 }
 
