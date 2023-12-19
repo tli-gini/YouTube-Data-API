@@ -59,3 +59,11 @@ const callParams = () => {
 };
 
 btn.addEventListener("click", callParams);
+
+document.addEventListener("keydown", function (e) {
+  console.log("keydown", e);
+  keys[e.code] = true; //物件 物件屬性
+  if (e.code === "Enter") {
+    callParams();
+  }
+});
